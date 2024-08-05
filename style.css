@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+body > * {
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+
+    width: 37.5rem;
+    height: 28rem;
+
+    border-radius: 0.5rem;
+
+    overflow: hidden;
+    background-color: white;
+}
+
+.image-container {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: contain;
+    width: 64.5rem;
+}
+
+
+
+.info-section {
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.info-section > * {
+    margin: 0;
+}
+
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+
+    font-weight: 700;
+    font-size: 0.75rem;
+
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume-title {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+
+    line-height: 2rem;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+
+    line-height: 1.5rem;
+}
+
+
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: "Fraunces", serif;
+    margin-bottom: 0.5rem;
+}
+
+.prices > * {
+    margin: 0;
+}
+
+.prices > h2 {
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.prices > p {
+    font-size: 0.9rem;
+    color: hsl(228, 12%, 48%);
+
+    text-decoration: line-through;
+}
+
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    height: 3rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    background-color: hsl(158, 36%, 37%);
+
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        height: fit-content;
+        padding: 2rem 0rem;
+    }
+
+    main {
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .image-container {
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        height: 16rem;
+        width: 100%;
+
+        margin-bottom: -3rem;
+    }
+}
