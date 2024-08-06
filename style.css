@@ -33,6 +33,8 @@ main {
 .image-container {
     background-image: url(./images/image-product-desktop.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 64.5rem;
 }
 
