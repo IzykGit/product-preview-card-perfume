@@ -30,12 +30,9 @@ main {
     background-color: white;
 }
 
-.image-container {
-    background-image: url(./images/image-product-desktop.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.image-container > img {
     height: 100%;
-    width: 64.5rem;
+    width: auto;
 }
 
 
@@ -140,12 +137,7 @@ main {
         flex-direction: column;
     }
 
-    .image-container {
-        background-image: url(./images/image-product-mobile.jpg);
-        background-repeat: no-repeat;
-        height: 16rem;
+    .image-container > img {
         width: 100%;
-
-        margin-bottom: -3rem;
     }
 }
